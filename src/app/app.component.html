@@ -1,0 +1,82 @@
+ <!--
+ <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block " style="z-index: 2000;" [hidden]="esconderBarra()">
+    <div class="container-fluid " [hidden]="esconderBarra()">
+     
+      <a class="navbar-brand nav-link"  href="#">
+        <strong>Pizza Mania</strong>
+      </a>
+      
+  
+      <div class="collapse navbar-collapse " id="navbarExample01"   [hidden]="esconderBarra()" >
+        <ul class="navbar-nav me-auto  mb-2 mb-lg-0 ">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+          </li>
+          <li mdbDropdown class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+              
+                id="navbarDropdownMenuLink"
+                role="button"
+                mdbDropdownToggle
+                aria-expanded="false"
+              >
+                Cardápio
+              </a>
+              <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="#">Pizzas salgadas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Pizzas doces</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Calzones</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Bebidas</a>
+                </li>
+              </ul>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#parceiros" >Pedidos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#cadastro">Reservar mesa</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/conta']" routerLinkActive="router-link-active">Conta</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav d-flex flex-row">
+          <form class="d-flex input-group w-auto">
+              <input
+                type="search"
+                type="search"
+                class="form-control rounded"
+                placeholder="Pesquisar"
+                aria-label="Search"
+              />
+              <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search" style="cursor: pointer;"></i>
+              </span>
+            </form>
+       
+            <li class="nav-item me-3 mt-1 w-auto">
+              <i class="fas fa-lg fa-cart-arrow-down text-light"></i>
+            </li>
+            
+
+          <li class="nav-item me-3 me-lg-0">
+            <button type="button" class="btn btn-danger" (click)="sair()" >Sair<i class="fas fa-sign-out-alt" style="padding-left: 2px;"></i></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </nav>
+   -->
+  <router-outlet></router-outlet>

@@ -1,0 +1,86 @@
+  <!--Main Navigation-->
+  <header>
+    <style>
+      #intro {
+        background-image: url("../assets/backgroundPizza.jpg");
+        height: 100vh;
+      }
+
+     
+
+      .navbar .nav-link {
+       
+        color: #fff !important;
+      }
+    </style>
+
+    
+
+    <!-- Background image -->
+    <div id="intro" class="bg-image shadow-2-strong">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
+        <section class="ftco-section">
+            <div class="container">
+               
+                <div class="row justify-content-center">
+                    <div class="col-md-12 col-lg-10">
+                        <div class="wrap d-md-flex">
+                            <div class="text-wrap p-4 p-lg-5 text-center d-flex align-items-center order-md-last">
+                                <div class="text w-100">
+                                    <h2>Bem-vindo à PizzaMania</h2>
+                                    <p>Ainda não se cadastrou?</p>
+                                    <a href="#" class="btn btn-white btn-outline-white">Cadastrar-se</a>
+                                </div>
+                      </div>
+                            <div class="login-wrap p-4 p-lg-5">
+                          <div class="d-flex">
+                              <div class="w-100">
+                                  <h3 class="mb-4">Login</h3>
+                              </div>
+                                    <div class="w-100">
+                                        <p class="social-media d-flex justify-content-end">
+                                            <a href="#" class="social-icon d-flex align-items-center justify-content-center"><i class="fab fa-instagram"></i></a>
+                                            <a href="#" class="social-icon d-flex align-items-center justify-content-center"><i class="fab fa-twitter"></i></a>
+                                        </p>
+                                    </div>
+                          </div>
+                                <form  class="signin-form">
+                              <div class="form-group mb-3">
+                                  <label class="label" for="name">E-mail</label>
+                                  <input type="text" class="form-control" id="email" [(ngModel)]="usuario.email" name="email" placeholder="Seu e-mail" required>
+                              </div>
+                        <div class="form-group mb-3">
+                            <label class="label" for="password">Senha</label>
+                          <input type="password" class="form-control" id="senha" [(ngModel)]="usuario.senha" name="senha" placeholder="Sua senha" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control btn btn-primary submit px-3" (click)="login()">Entrar</button>
+                        </div>
+                        <div class="form-group d-md-flex">
+                            <div class="w-50 text-left">
+                                <label class="checkbox-wrap checkbox-primary mb-0" [routerLink]="['/pizzaMania']" routerLinkActive="router-link-active">Voltar
+                                          
+                                          <i class="fas fa-home"></i>
+                                            </label>
+                                        </div>
+                                        <div class="w-50 text-md-right">
+                                            <a href="#">Esqueci minha senha</a>
+                                        </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+  <!--Main Navigation-->
+
+
+ 
+
+  
